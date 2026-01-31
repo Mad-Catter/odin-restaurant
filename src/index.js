@@ -1,4 +1,6 @@
 import createHome from "./home-section.js"
+import createMenu from "./menu-section.js"
+import createAbout from "./about-section.js"
 import "./style.css";
 
 createHome();
@@ -14,10 +16,10 @@ home.addEventListener("click", e => {
 
 })
 menu.addEventListener("click", e => {
-    body.classList = "menu-body";
+    createMenu();
 
 })
 about.addEventListener("click", e => {
-    body.classList = "about-body";
+    createAbout();
 
 })

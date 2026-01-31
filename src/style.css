@@ -22,6 +22,15 @@ body {
 .about-body {
     background-image: url("../assets/images/about2400x1600.jpg");
 }
+.invisible {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 1.5s ease-in, transform 1.5s ease-in;
+}
+.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
 /* Header Section */
 header {
     background-color: var(--background-opacity);
@@ -31,8 +40,8 @@ header > h1 {
     color: white;
     font-family: "Carattere", sans-serif;
     font-size: 4rem;
-    margin-left: 5px;
-    margin-top: 5px;;
+    padding-left: 5px;
+    padding-top: 5px;;
 }
 
 nav {
@@ -126,6 +135,7 @@ h2 {
 }
 .menu-section h3 {
     font-size: 2rem;
+    margin-top: 20px;
 }
 
 .food-section {
